@@ -9,7 +9,7 @@ public class SharedPrefManager {
 
 
     public SharedPrefManager(Context context) {
-        sharedPreferences = context.getSharedPreferences("latihan_shared_preference",context.MODE_PRIVATE);
+        sharedPreferences = context.getSharedPreferences("latihan_shared_preference", Context.MODE_PRIVATE);
         editor =sharedPreferences.edit();
     }
 

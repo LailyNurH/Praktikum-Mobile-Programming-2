@@ -13,6 +13,5 @@ public class MyApp extends Application {
         db = Room.databaseBuilder(getApplicationContext(),
                 AppDatabase.class,"mahasiswa").allowMainThreadQueries().build();
     }
-
 }
 

@@ -12,7 +12,7 @@
         android:theme="@style/Theme.PraktikumMobileProgrammingII">
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashActivity" />
+
         <activity android:name=".RoomDB.ViewRoomDataActivity" />
         <activity android:name=".RoomDB.AddRoomDataActivity" />
         <activity android:name=".RoomDB.RoomDataActivity" />
@@ -20,7 +20,8 @@
         <activity android:name=".WithFragmentActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".ReciverActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

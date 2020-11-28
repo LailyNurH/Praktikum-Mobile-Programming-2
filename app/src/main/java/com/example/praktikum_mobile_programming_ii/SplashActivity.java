@@ -1,10 +1,10 @@
 package com.example.praktikum_mobile_programming_ii;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.praktikum_mobile_programming_ii.sharedpref.SharedPrefManager;
 
@@ -22,17 +22,16 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                if (sharedPrefManager.getIsLogin()){
-                    Intent i = new Intent(SplashActivity.this, ProfileActivity.class);
+                if (sharedPrefManager.getIsLogin()) {
+                    Intent intent = new Intent(SplashActivity.this, ProfileActivity.class);
                     finishAffinity();
-                    startActivity(i);
-                }else{
-                    Intent i = new Intent(SplashActivity.this, HomeActivity.class);
+                    startActivity(intent);
+                } else {
+                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                     finishAffinity();
-                    startActivity(i);
+                    startActivity(intent);
                 }
             }
         }, 3000);
-
     }
 }

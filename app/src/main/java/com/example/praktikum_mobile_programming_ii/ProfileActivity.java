@@ -1,11 +1,11 @@
 package com.example.praktikum_mobile_programming_ii;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.praktikum_mobile_programming_ii.sharedpref.SharedPrefManager;
 
@@ -28,7 +28,7 @@ public class ProfileActivity extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ProfileActivity.this, HomeActivity.class);
+                Intent i = new Intent(ProfileActivity.this, MainActivity.class);
                 sharedPrefManager.saveIsLogin(false);
                 finishAffinity();
                 startActivity(i);
