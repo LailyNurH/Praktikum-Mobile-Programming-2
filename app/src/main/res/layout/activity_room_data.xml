@@ -32,6 +32,13 @@
             android:layout_height="wrap_content"
             android:text="Lihat Data"
             android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btncrud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CRUD"
+            android:textColor="#FFF" />
     </LinearLayout>
 
 

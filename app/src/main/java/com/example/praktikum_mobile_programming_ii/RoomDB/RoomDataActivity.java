@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.praktikum_mobile_programming_ii.R;
+import com.example.praktikum_mobile_programming_ii.ui.CRUD.MainActivity2;
 
 public class RoomDataActivity extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class RoomDataActivity extends AppCompatActivity {
         setContentView(R.layout.activity_room_data);
         Button btnTambah =  findViewById(R.id.btnTambah);
         Button btnLihat =  findViewById(R.id.btnlihat);
+        Button btncrud = findViewById(R.id.btncrud);
 
         btnTambah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +32,14 @@ public class RoomDataActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(RoomDataActivity.this, ViewRoomDataActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btncrud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(RoomDataActivity.this, MainActivity2.class);
                 startActivity(i);
             }
         });

@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
                             Log.d("password","pass"+password);
 
                             if (username.equals(spUsername) && password.equals(spPassword)){
-                                Intent i = new Intent(LoginActivity.this, ProfileActivity.class);
+                                Intent i = new Intent(LoginActivity.this, com.example.praktikum_mobile_programming_ii.ProfileActivity.class);
                                 sharedPrefManager.saveIsLogin(true);
                                 finishAffinity();
                                 startActivity(i);
