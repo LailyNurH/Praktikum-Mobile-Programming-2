@@ -3,7 +3,7 @@
     package="com.example.praktikum_mobile_programming_ii">
 
     <application
-        android:name=".RoomDB.DB.MyApp"
+        android:name=".CRUD.CrudRoomApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,7 +12,6 @@
         android:theme="@style/Theme.PraktikumMobileProgrammingII">
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashActivity" />
         <activity android:name=".RoomDB.ViewRoomDataActivity" />
         <activity android:name=".RoomDB.AddRoomDataActivity" />
         <activity android:name=".RoomDB.RoomDataActivity" />
@@ -21,6 +20,7 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".ReciverActivity" />
         <activity android:name=".ui.CRUD.MainActivity2"/>
+        <activity android:name=".SplashActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
