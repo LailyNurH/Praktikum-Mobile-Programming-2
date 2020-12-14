@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Intent intent = new Intent(getApplicationContext(), ReciverActivity.class);
+                Intent intent = new Intent(getApplicationContext(), com.example.praktikum_mobile_programming_ii.ReciverActivity.class);
                 intent.putExtra("welcome", "halo dari Activity");
                 startActivity(intent);
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(MainActivity.this, WithFragmentActivity.class);
+                Intent intent = new Intent(MainActivity.this, com.example.praktikum_mobile_programming_ii.WithFragmentActivity.class);
                 startActivity(intent);
 
             }
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                Intent intent = new Intent(MainActivity.this, com.example.praktikum_mobile_programming_ii.HomeActivity.class);
                 startActivity(intent);
 
             }

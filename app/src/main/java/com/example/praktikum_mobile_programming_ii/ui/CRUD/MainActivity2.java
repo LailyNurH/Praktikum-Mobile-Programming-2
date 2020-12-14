@@ -11,11 +11,12 @@ import com.example.praktikum_mobile_programming_ii.CRUD.CrudRoomApp;
 import com.example.praktikum_mobile_programming_ii.R;
 import com.example.praktikum_mobile_programming_ii.RoomDB.Adapter.RvAdapter;
 import com.example.praktikum_mobile_programming_ii.RoomDB.model.Mahasiswa;
+import com.example.praktikum_mobile_programming_ii.common.DataListListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
-public class MainActivity2 extends AppCompatActivity {
+public class CRUD extends AppCompatActivity {
     private RecyclerView rvListMahasiswa;
     private FloatingActionButton fabTambah;
     private RvAdapter adapter;
@@ -42,7 +43,7 @@ public class MainActivity2 extends AppCompatActivity {
         fabTambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity2.this, TambahUbahDataActivity.class));
+                startActivity(new Intent(CRUD.this, TambahUbahDataActivity.class));
             }
         });
 
