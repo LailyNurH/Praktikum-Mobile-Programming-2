@@ -23,11 +23,11 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (sharedPrefManager.getIsLogin()){
-                    Intent i = new Intent(SplashActivity.this, ProfileActivity.class);
+                    Intent i = new Intent(SplashActivity.this, com.example.praktikum_mobile_programming_ii.ProfileActivity.class);
                     finishAffinity();
                     startActivity(i);
                 }else{
-                    Intent i = new Intent(SplashActivity.this, HomeActivity.class);
+                    Intent i = new Intent(SplashActivity.this, com.example.praktikum_mobile_programming_ii.MainActivity.class);
                     finishAffinity();
                     startActivity(i);
                 }

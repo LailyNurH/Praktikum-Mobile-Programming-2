@@ -7,6 +7,7 @@ import androidx.annotation.RequiresApi;
 import androidx.room.Room;
 
 import com.example.praktikum_mobile_programming_ii.RoomDB.DB.AppDatabase;
+import com.example.praktikum_mobile_programming_ii.RoomDB.DB.DataBaseMigrations;
 
 import static java.time.chrono.IsoChronology.INSTANCE;
 
@@ -22,11 +23,14 @@ public class CrudRoomApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        dataBase = Room.databaseBuilder(this,AppDatabase.class,"database_mahasiswa")
-                .allowMainThreadQueries().build();
+        dataBase = Room.databaseBuilder(this, AppDatabase.class, "database_mahasiswa")
+                .addMigrations(DataBaseMigrations.MIGRATION_1_TO_2)
+                .allowMainThreadQueries()
+                .build();
 
         INSTANCE = this;
     }
+
     public AppDatabase getDataBase() {
         return dataBase;
     }

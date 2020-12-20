@@ -1,4 +1,4 @@
-package com.example.praktikum_mobile_programming_ii.ui.CRUD;
+package com.example.praktikum_mobile_programming_ii.common;
 
 import com.example.praktikum_mobile_programming_ii.RoomDB.model.Mahasiswa;
 

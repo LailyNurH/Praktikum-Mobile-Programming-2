@@ -8,10 +8,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.praktikum_mobile_programming_ii.R;
+import com.example.praktikum_mobile_programming_ii.RoomDB.Adapter.RvAdapter;
 import com.example.praktikum_mobile_programming_ii.ui.CRUD.MainActivity2;
 
 public class RoomDataActivity extends AppCompatActivity {
-
+    private RvAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,7 @@ public class RoomDataActivity extends AppCompatActivity {
         Button btnTambah =  findViewById(R.id.btnTambah);
         Button btnLihat =  findViewById(R.id.btnlihat);
         Button btncrud = findViewById(R.id.btncrud);
+
 
         btnTambah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,4 +47,5 @@ public class RoomDataActivity extends AppCompatActivity {
         });
 
     }
+
 }

@@ -27,14 +27,14 @@ public class WithFragmentActivity extends AppCompatActivity {
         btn_fragment1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new FirstFragment());
+                loadFragment(new com.example.praktikum_mobile_programming_ii.FirstFragment());
 
             }
         });
         btn_fragment2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new SecondFragment());
+                loadFragment(new com.example.praktikum_mobile_programming_ii.SecondFragment());
 
 
             }

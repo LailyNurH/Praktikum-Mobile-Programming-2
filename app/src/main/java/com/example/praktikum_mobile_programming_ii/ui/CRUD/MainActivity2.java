@@ -16,7 +16,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
-public class CRUD extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
+
     private RecyclerView rvListMahasiswa;
     private FloatingActionButton fabTambah;
     private RvAdapter adapter;
@@ -24,8 +25,7 @@ public class CRUD extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_delete_update);
-
+        setContentView(R.layout.activity_main2);
         adapter = new RvAdapter();
 
         rvListMahasiswa = findViewById(R.id.rv_list_mahasiswa);
@@ -43,7 +43,7 @@ public class CRUD extends AppCompatActivity {
         fabTambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(CRUD.this, TambahUbahDataActivity.class));
+                startActivity(new Intent(MainActivity2.this, TambahUbahDataActivity.class));
             }
         });
 
@@ -52,11 +52,9 @@ public class CRUD extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
         List<Mahasiswa> datas = CrudRoomApp.getInstance().getDataBase().userDao().getAll();
         adapter.setData(datas);
-
-
     }
 
 }
+

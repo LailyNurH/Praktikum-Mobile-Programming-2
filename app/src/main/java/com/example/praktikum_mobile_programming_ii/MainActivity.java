@@ -7,8 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.praktikum_mobile_programming_ii.Service.TimerServiceActivity;
+
+
 public class MainActivity extends AppCompatActivity {
-    Button btntest,btntoFragmentActivity,btntosharedprefandroomdb,btnLogin;
+    Button btntest,btntoFragmentActivity,btntosharedprefandroomdb;
+    Button btn_timer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         btntest = findViewById(R.id.btntest);
         btntoFragmentActivity = findViewById(R.id.btntoFragmentActivity);
         btntosharedprefandroomdb = findViewById(R.id.btntosharedprefandroomdb);
-        btnLogin =  findViewById(R.id.btnLogin);
+        btn_timer = findViewById(R.id.btn_timer);
+
 
     }
 
@@ -56,13 +61,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btn_timer.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, TimerServiceActivity.class);
                 startActivity(intent);
             }
         });
+
+
 
     }
 }
