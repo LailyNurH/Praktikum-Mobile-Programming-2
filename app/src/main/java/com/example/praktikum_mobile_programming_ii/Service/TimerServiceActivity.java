@@ -45,6 +45,7 @@ public class TimerServiceActivity extends AppCompatActivity {
             mTextTimer.setText("0:00");
             Intent intent = new Intent(TimerServiceActivity.this, TimerService.class);
             intent.setAction(TimerService.ACTION_STOP_FOREGROUND_SERVICE);
+            Toast.makeText(getApplicationContext(), "Foreground service is stopped.", Toast.LENGTH_LONG).show();
             stopService(intent);
         });
     }

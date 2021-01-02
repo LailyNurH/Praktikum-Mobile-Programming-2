@@ -10,6 +10,7 @@
 
     <application
         android:name=".CRUD.CrudRoomApp"
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,7 +19,7 @@
         android:theme="@style/Theme.PraktikumMobileProgrammingII"
         tools:ignore="AllowBackup,UnusedAttribute">
         <activity android:name=".Service.TimerServiceActivity"></activity>
-
+        <activity android:name=".RoomDB.ViewRoomDataActivity" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -29,7 +30,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".RoomDB.ViewRoomDataActivity" />
+
         <activity android:name=".RoomDB.AddRoomDataActivity" />
         <activity android:name=".RoomDB.RoomDataActivity" />
         <activity android:name=".sharedpref.SharedPrefActivity" />
@@ -45,14 +46,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".Service.TimerService"  android:enabled="true"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".ui.CRUD.MainActivity2" />
         <activity android:name=".ui.CRUD.TambahUbahDataActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".ProfileActivity" />
 
-    <service android:name=".Service.TimerService"
-        android:enabled="true"/>
     </application>
 
 
